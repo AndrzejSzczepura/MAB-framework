@@ -2,8 +2,8 @@ import random
 from multi_agent_bandits.core.agent import Agent
 
 class EpsilonGreedyAgent(Agent):
-    def __init__(self, n_arms, epsilon=0.1):
-        super().__init__(n_arms)
+    def __init__(self, n_arms, epsilon=0.1, name = None):
+        super().__init__(n_arms, name=name)
         self.epsilon = epsilon
 
         #track estimates and counts

@@ -1,12 +1,11 @@
-import random
-
 class Agent:
     """
-    Class interface for a bandit agent.
+    Base interface for all agents.
     """
 
-    def __init__(self, n_arms):
+    def __init__(self, n_arms, name=None):
         self.n_arms = n_arms
+        self.name = name if name is not None else self.__class__.__name__
 
     def choose_arm(self):
         raise NotImplementedError

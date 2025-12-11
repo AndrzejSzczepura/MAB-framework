@@ -1,0 +1,19 @@
+[project]
+name = "multi-agent-bandits"
+version = "0.1.0"
+description = "Multi-Agent Bandit Framework for BSc thesis projects."
+readme = "README.md"
+authors = [{name = "Andrzej Szczepura"}]
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+mab = "multi_agent_bandits.cli:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["multi_agent_bandits*"]
+exclude = ["configs*", "results*", "docs*", "examples*"]

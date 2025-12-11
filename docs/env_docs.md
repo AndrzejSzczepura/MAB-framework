@@ -1,1 +1,0 @@
-This file will contain the documentation of the environment.

@@ -9,8 +9,8 @@ class UCB_BaselineAgent(Agent):
     where exploration_bonus shrinks with more pulls
     """
 
-    def __init__(self, n_arms):
-        super().__init__(n_arms)
+    def __init__(self, n_arms, name = None):
+        super().__init__(n_arms, name=name)
 
         self.counts = [0] * n_arms
         self.values = [0.0] * n_arms

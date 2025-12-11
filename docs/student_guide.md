@@ -1,1 +1,0 @@
-This document will contain the guide for the students - how to safely and efficently work with this env.
